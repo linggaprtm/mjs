@@ -303,7 +303,7 @@
         <div class="collapse navbar-collapse" id="navbarsExample07">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="dropdown07" data-bs-toggle="dropdown"
+              <a class="nav-link dropdown-toggle" href="/product" id="dropdown07" data-bs-toggle="dropdown"
                 aria-expanded="false">Products</a>
               <ul class="dropdown-menu" aria-labelledby="dropdown07">
                 <li style="border-bottom: 1px solid #ced4da;"><a class="dropdown-item" href="product/fumigant/postoxin-56-tb.html">Fumigant</a></li>
@@ -331,7 +331,7 @@
               </ul>
             </li>
             <li class="nav-item" >
-              <a class="nav-link" href="contact.html">Contact </a>
+              <a class="nav-link" href="/product">Contact </a>
             </li>
           </ul>
           <!-- <form class="d-flex" name="searchProductForm" action="" >

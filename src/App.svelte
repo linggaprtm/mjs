@@ -54,7 +54,7 @@
 
 	// import Project from './pages/Projects.svelte';
 
-	const baseUrl = '/';
+	const baseUrl = 'https://ephemeral-meringue-87f963.netlify.app/';
 	
 	let page, subNav = '', uri, params, getParams;
 
