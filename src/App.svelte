@@ -47,6 +47,11 @@
 <script>
 	import router from 'page';
 	import Home from './pages/Home.svelte';
+	import About from './pages/About.svelte';
+	import Product from './pages/Product.svelte';
+  import Brand from './pages/Brand.svelte';
+
+
 	// import Project from './pages/Projects.svelte';
 
 	const baseUrl = '/';
@@ -54,6 +59,10 @@
 	let page, subNav = '', uri, params, getParams;
 
 	router(`${baseUrl}home/`, () => (page = Home, uri = '/home', subNav = ''));
+  router(`${baseUrl}about/`, () => (page = About, uri = '/about', subNav = ''));
+  router(`${baseUrl}product/`, () => (page = Product, uri = '/product', subNav = ''));
+  router(`${baseUrl}brand/`, () => (page = Brand, uri = '/brand', subNav = ''));
+
 	router(`${baseUrl}`, () => (page = Home, uri = '/home', subNav = ''));
 	// router(`${baseUrl}projects/`,() => (page = Project, uri = '/projects', subNav = ''));
 	// router (

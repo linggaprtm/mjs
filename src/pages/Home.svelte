@@ -4,8 +4,14 @@
     // import Footer from '../components/Footer.svelte';
     // import { storeCategories, storeBanner, storeProjectsHome } from '../data/store.js';
     import { Splide, SplideSlide } from '@splidejs/svelte-splide';
-    import svelteLogo from '../assets/images/contoh_banner.webp'
-    import sectionimg1 from '../assets/images/section1.png'
+    import svelteLogoMs from '../assets/images/logo-large.jpg';
+    import svelteLogo from '../assets/images/contoh_banner.webp';
+    import sectionimg1 from '../assets/images/section1.png';
+    import deviderOurCustomer from '../assets/images/our-customer.png';
+    import deviderNewProduct from '../assets/images/new-product.png';
+    import deviderOurPrincipal from '../assets/images/our-principal.png';
+
+
     // Default theme
     import '@splidejs/svelte-splide/css';
 
@@ -277,12 +283,71 @@
   
 
 </style>
+<header class="site-header sticky-top" style="background-color:#ffff;">
+    <nav class="navbar navbar-expand-lg d-flex flex-column flex-md-row"
+      aria-label="Eighth navbar example">
+      <div class="container">
+        <a class="navbar-brand me-4" href="index.html">
+          <img src="{svelteLogoMs}" class="" style="max-width:130px;" alt="logo"/>
+          <!-- <div>hello</div> -->
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07"
+          aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+          <svg viewBox="0 0 100 100" width="30" height="30" >
+            <path class="opened line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+            <path class="opened line line2" d="M 20,50 H 80" />
+            <path class="opened line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+          </svg>
+        </button>
 
-    <div class="container">
-        Heloo..
+        <div class="collapse navbar-collapse" id="navbarsExample07">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdown07" data-bs-toggle="dropdown"
+                aria-expanded="false">Products</a>
+              <ul class="dropdown-menu" aria-labelledby="dropdown07">
+                <li style="border-bottom: 1px solid #ced4da;"><a class="dropdown-item" href="product/fumigant/postoxin-56-tb.html">Fumigant</a></li>
+                <li  style="border-bottom: 1px solid #ced4da;"><a class="dropdown-item" href="product/insecticide/insecticide.html">Insecticide</a></li>
+                <li  style="border-bottom: 1px solid #ced4da;">
+                  <a class="dropdown-item" href="product/safety/5600.html">Safety</a>
+                </li>
+                <li style="border-bottom: 1px solid #ced4da;">
+                  <a class="dropdown-item" href="product/tools/pt-test-kit.html">Tools</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item"  >
+              <a class="nav-link" href="value.html">Corporate Values </a>
+            </li>
+            <li class="nav-item dropdown"  >
+              <a class="nav-link dropdown-toggle" href="#" id="dropdown08" data-bs-toggle="dropdown"
+                aria-expanded="false">Newsletter</a>
+              <ul class="dropdown-menu" aria-labelledby="dropdown08">
+                <li><a class="dropdown-item" href="newsletter/product-palsu.html">Produk Palsu</a></li>
+                <li>
+                  <a class="dropdown-item" href="newsletter/variant-palsu.html">Varian Phostoxin Amerika Palsu</a>
+                </li>
+                <li><a class="dropdown-item" href="newsletter/perbedaan-product-palsu.html">Perbedaan Product Palsu</a></li>
+              </ul>
+            </li>
+            <li class="nav-item" >
+              <a class="nav-link" href="contact.html">Contact </a>
+            </li>
+          </ul>
+          <!-- <form class="d-flex" name="searchProductForm" action="" >
+            <input class="form-control field-search" name="fsearch" type="text" placeholder="Search" aria-label="Search" />
+            <div id="search-button" class="btn text-white btn-search" >
+              <svg height="19" viewBox="0 0 19 19" width="19" class="search-svg-icon"><g fill-rule="evenodd" stroke="none" stroke-width="1"><g transform="translate(-1016 -32)"><g><g transform="translate(405 21)"><g transform="translate(611 11)"><path d="m8 16c4.418278 0 8-3.581722 8-8s-3.581722-8-8-8-8 3.581722-8 8 3.581722 8 8 8zm0-2c-3.3137085 0-6-2.6862915-6-6s2.6862915-6 6-6 6 2.6862915 6 6-2.6862915 6-6 6z"></path><path d="m12.2972351 13.7114222 4.9799555 4.919354c.3929077.3881263 1.0260608.3842503 1.4141871-.0086574.3881263-.3929076.3842503-1.0260607-.0086574-1.414187l-4.9799554-4.919354c-.3929077-.3881263-1.0260608-.3842503-1.4141871.0086573-.3881263.3929077-.3842503 1.0260608.0086573 1.4141871z"></path></g></g></g></g></g></svg>  
+            </div>
+          </form> -->
+        </div>
+      </div>
+    </nav>
+  </header>
+
+    <div class="container mt-2">
         <Splide aria-label="My Favorite Images">
             <SplideSlide>
-            
               <img src="http://majuselaras.com/cms/assets/uploads/slider/1539156620.png" class="image-banner" alt="Image 1"/>
             </SplideSlide>
             <SplideSlide>
@@ -300,7 +365,7 @@
         </div>
     </div>
     <div class="">
-        <img src="{sectionimg1}" class="image-section" alt="Image 1"/>
+        <img src="{deviderNewProduct}" class="image-section" alt="Image 1"/>
     </div>
 
     <Splide
@@ -312,8 +377,6 @@
         padding: { right: 40 },
         arrows:false,
         pagination:false,
-        
-
     } }
     >
         <SplideSlide>
@@ -361,7 +424,7 @@
             <div class="m-1">
             <div class="card" style="">
                 <div class="" style="height: 100%;box-sizing: border-box;">
-                <div style="overflow: visible;border: 1px solid transparent;     text-decoration: none;
+                <div style="overflow: visible;border: 1px solid transparent;text-decoration: none;
                 color: rgba(0,0,0,.87);
                 display: block;
                 box-shadow: 0 0.0625rem 0.125rem 0 rgb(0 0 0 / 10%);
@@ -380,7 +443,7 @@
                 transition: transform .1s cubic-bezier(.4,0,.6,1),box-shadow .1s cubic-bezier(.4,0,.6,1);">
                     <div style="pointer-events: none;">
                     <div style="width: 100%;padding-top: 100%;      position: relative;">
-                        <img width="invalid-value" height="invalid-value" alt="Maybelline Superstay Matte Ink Liquid Matte Lipstick Make Up [ Tahan Lama Hingga 16 Jam ]" class="Vz6gJ3 edy5hG" style="object-fit: contain" src="http://majuselaras.com/cms/assets/uploads/product/1595226491.jpeg">
+                        <img width="invalid-value" height="invalid-value" alt="Maybelline Superstay Matte Ink Liquid Matte Lipstick Make Up [ Tahan Lama Hingga 16 Jam ]" class="Vz6gJ3 edy5hG" style="object-fit: contain" src="http://majuselaras.com/cms/assets/uploads/product/1643879792.jpeg">
                     </div>
                     </div>
                     <div class="W3bJfG">
@@ -563,7 +626,7 @@
 
 
     <div class="">
-        <img src="{sectionimg1}" class="image-section" alt="Image 1"/>
+        <img src="{deviderOurCustomer}" class="image-section" alt="Image 1"/>
     </div>
 
     <Splide
@@ -580,7 +643,7 @@
     } }
     >
         <SplideSlide>
-            <div class="m-2 d-flex justify-content-center">
+            <div class="m-2  d-flex justify-content-center">
                 <img src="http://majuselaras.com/cms/assets/uploads/principal/1538424351.png" class="image-banner" alt="Image 1"/>
             </div>
         </SplideSlide>
@@ -601,6 +664,10 @@
             </div>
         </SplideSlide>
     </Splide>
+
+    <div class="">
+        <img src="{deviderOurPrincipal}" class="image-section" alt="Image 1"/>
+    </div>
 
 
 
