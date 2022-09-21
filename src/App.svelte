@@ -58,10 +58,10 @@
 	
 	let page, subNav = '', uri, params, getParams;
 
-	router(`${baseUrl}home/`, () => (page = Home, uri = '/home', subNav = ''));
-  router(`${baseUrl}about/`, () => (page = About, uri = '/about', subNav = ''));
-  router(`${baseUrl}product/`, () => (page = Product, uri = '/product', subNav = ''));
-  router(`${baseUrl}brand/`, () => (page = Brand, uri = '/brand', subNav = ''));
+	router(`${baseUrl}home`, () => (page = Home, uri = '/home', subNav = ''));
+  router(`${baseUrl}about`, () => (page = About, uri = '/about', subNav = ''));
+  router(`${baseUrl}product`, () => (page = Product, uri = '/product', subNav = ''));
+  router(`${baseUrl}brand`, () => (page = Brand, uri = '/brand', subNav = ''));
 
 	router(`${baseUrl}`, () => (page = Home, uri = '/home', subNav = ''));
 	// router(`${baseUrl}projects/`,() => (page = Project, uri = '/projects', subNav = ''));
