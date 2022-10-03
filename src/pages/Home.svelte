@@ -6,6 +6,8 @@
     import { Splide, SplideSlide } from '@splidejs/svelte-splide';
     import svelteLogoMs from '../assets/images/logo-large.jpg';
     import svelteLogo from '../assets/images/contoh_banner.webp';
+    import banner1 from '../assets/images/banner1.png';
+    import videoimage from '../assets/images/videoimage.png';
     import sectionimg1 from '../assets/images/section1.png';
     import deviderOurCustomer from '../assets/images/our-customer.png';
     import deviderNewProduct from '../assets/images/new-product.png';
@@ -287,7 +289,7 @@
     <nav class="navbar navbar-expand-lg d-flex flex-column flex-md-row"
       aria-label="Eighth navbar example">
       <div class="container">
-        <a class="navbar-brand me-4" href="index.html">
+        <a class="navbar-brand me-4" href="/">
           <img src="{svelteLogoMs}" class="" style="max-width:130px;" alt="logo"/>
           <!-- <div>hello</div> -->
         </a>
@@ -302,7 +304,7 @@
 
         <div class="collapse navbar-collapse" id="navbarsExample07">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-            <li class="nav-item dropdown">
+            <!-- <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="/product" id="dropdown07" data-bs-toggle="dropdown"
                 aria-expanded="false">Products</a>
               <ul class="dropdown-menu" aria-labelledby="dropdown07">
@@ -315,11 +317,20 @@
                   <a class="dropdown-item" href="product/tools/pt-test-kit.html">Tools</a>
                 </li>
               </ul>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="/product">Product </a>
             </li>
-            <li class="nav-item"  >
+            <li class="nav-item">
+              <a class="nav-link" href="/brand">Brands </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about">About </a>
+            </li>
+            <!-- <li class="nav-item">
               <a class="nav-link" href="value.html">Corporate Values </a>
-            </li>
-            <li class="nav-item dropdown"  >
+            </li> -->
+            <!-- <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="dropdown08" data-bs-toggle="dropdown"
                 aria-expanded="false">Newsletter</a>
               <ul class="dropdown-menu" aria-labelledby="dropdown08">
@@ -329,9 +340,9 @@
                 </li>
                 <li><a class="dropdown-item" href="newsletter/perbedaan-product-palsu.html">Perbedaan Product Palsu</a></li>
               </ul>
-            </li>
-            <li class="nav-item" >
-              <a class="nav-link" href="/product">Contact </a>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="/contact">Contact </a>
             </li>
           </ul>
           <!-- <form class="d-flex" name="searchProductForm" action="" >
@@ -348,6 +359,9 @@
     <div class="container mt-2">
         <Splide aria-label="My Favorite Images">
             <SplideSlide>
+              <img src="{banner1}" class="image-banner" alt="Image 1"/>
+            </SplideSlide>
+            <SplideSlide>
               <img src="http://majuselaras.com/cms/assets/uploads/slider/1539156620.png" class="image-banner" alt="Image 1"/>
             </SplideSlide>
             <SplideSlide>
@@ -357,14 +371,16 @@
        
         <div class="row pt-2">
             <div class="col-6 pe-1">
-                <img src="{svelteLogo}" class="image-banner" alt="Image 1"/>
+                <img src="{videoimage}" class="image-banner" alt="Image 1"/>
             </div>
             <div class="col-6 ps-1">
-                <img src="{svelteLogo}" class="image-banner" alt="Image 1"/>
+                <img src="{videoimage}" class="image-banner" alt="Image 1"/>
             </div>
         </div>
     </div>
-    <div class="">
+
+    
+    <div class="mt-2">
         <img src="{deviderNewProduct}" class="image-section" alt="Image 1"/>
     </div>
 
@@ -482,20 +498,20 @@
                 padding: 0;
                 transition: transform .1s cubic-bezier(.4,0,.6,1),box-shadow .1s cubic-bezier(.4,0,.6,1);">
                     <div style="pointer-events: none;">
-                    <div style="width: 100%;padding-top: 100%;      position: relative;">
-                        <img width="invalid-value" height="invalid-value" alt="Maybelline Superstay Matte Ink Liquid Matte Lipstick Make Up [ Tahan Lama Hingga 16 Jam ]" class="Vz6gJ3 edy5hG" style="object-fit: contain" src="http://majuselaras.com/cms/assets/uploads/product/1643879792.jpeg">
-                    </div>
+                      <div style="width: 100%;padding-top: 100%;position: relative;">
+                          <img width="invalid-value" height="invalid-value" alt="Maybelline Superstay Matte Ink Liquid Matte Lipstick Make Up [ Tahan Lama Hingga 16 Jam ]" class="Vz6gJ3 edy5hG" style="object-fit: contain" src="http://majuselaras.com/cms/assets/uploads/product/1643879792.jpeg">
+                      </div>
                     </div>
                     <div class="W3bJfG">
-                    <div class="qUEEG4">
-                        <div class="hPc1Pf">
-                            <div class="vc0PvV AxYdVM">Isokinetic Sampling System MS 002 IDS Plus</div>
-                        </div>
-                    <!-- <div class="bVKmWS"><div class="_1PWkR nt-medium nt-foot _3nkRL" style="color: rgb(246, 145, 19);"><svg class="_2DRZW _2xFcL" viewBox="-0.5 -0.5 4 16"><path d="M4 0h-3q-1 0 -1 1a1.2 1.5 0 0 1 0 3v0.333a1.2 1.5 0 0 1 0 3v0.333a1.2 1.5 0 0 1 0 3v0.333a1.2 1.5 0 0 1 0 3q0 1 1 1h3" stroke-width="1" transform="" stroke="currentColor" fill="#f69113"></path></svg><div class="_1FKkT _3Ao0A" style="color: white; background-color: rgb(246, 145, 19);">Diskon 7%</div><svg class="_2DRZW _2xFcL" viewBox="-0.5 -0.5 4 16"><path d="M4 0h-3q-1 0 -1 1a1.2 1.5 0 0 1 0 3v0.333a1.2 1.5 0 0 1 0 3v0.333a1.2 1.5 0 0 1 0 3v0.333a1.2 1.5 0 0 1 0 3q0 1 1 1h3" stroke-width="1" transform="rotate(180) translate(-3 -15)" stroke="currentColor" fill="#f69113"></path></svg></div></div></div> -->
-                    <!-- <div class="imdVqB _2fuFWg"><div class="WSVId4 fepoRf"><span class="Fea6JM">Rp</span><span class="j0vBz2">94.900</span></div><div class="upl8wJ _82UoSS">10RB+ Terjual</div></div> -->
-            
+                      <div class="qUEEG4">
+                          <div class="hPc1Pf">
+                              <div class="vc0PvV AxYdVM">Isokinetic Sampling System MS 002 IDS Plus</div>
+                          </div>
+                      <!-- <div class="bVKmWS"><div class="_1PWkR nt-medium nt-foot _3nkRL" style="color: rgb(246, 145, 19);"><svg class="_2DRZW _2xFcL" viewBox="-0.5 -0.5 4 16"><path d="M4 0h-3q-1 0 -1 1a1.2 1.5 0 0 1 0 3v0.333a1.2 1.5 0 0 1 0 3v0.333a1.2 1.5 0 0 1 0 3v0.333a1.2 1.5 0 0 1 0 3q0 1 1 1h3" stroke-width="1" transform="" stroke="currentColor" fill="#f69113"></path></svg><div class="_1FKkT _3Ao0A" style="color: white; background-color: rgb(246, 145, 19);">Diskon 7%</div><svg class="_2DRZW _2xFcL" viewBox="-0.5 -0.5 4 16"><path d="M4 0h-3q-1 0 -1 1a1.2 1.5 0 0 1 0 3v0.333a1.2 1.5 0 0 1 0 3v0.333a1.2 1.5 0 0 1 0 3v0.333a1.2 1.5 0 0 1 0 3q0 1 1 1h3" stroke-width="1" transform="rotate(180) translate(-3 -15)" stroke="currentColor" fill="#f69113"></path></svg></div></div></div> -->
+                      <!-- <div class="imdVqB _2fuFWg"><div class="WSVId4 fepoRf"><span class="Fea6JM">Rp</span><span class="j0vBz2">94.900</span></div><div class="upl8wJ _82UoSS">10RB+ Terjual</div></div> -->
+              
+                      </div>
                     </div>
-                </div>
                 </div>
             </div>
             </div>
@@ -669,13 +685,11 @@
         <img src="{deviderOurPrincipal}" class="image-section" alt="Image 1"/>
     </div>
 
-
-
     <Splide
     options={ {
         // type   : 'loop',
         drag   : 'free',
-        perPage: 2,
+        perPage: 3,
         trimSpace:true,
         padding: { right: 40 },
         arrows:false,
@@ -685,110 +699,30 @@
     } }
     >
         <SplideSlide>
-            <div class="m-1">
-            <div class="card" style="">
-                <div class="" style="height: 100%;box-sizing: border-box;">
-                  <div style="overflow: visible;border: 1px solid transparent;     text-decoration: none;
-                  color: rgba(0,0,0,.87);
-                  display: block;
-                  box-shadow: 0 0.0625rem 0.125rem 0 rgb(0 0 0 / 10%);
-                  border-radius: 0.125rem;
-                  overflow: hidden;
-                  display: flex;
-                  flex-direction: column;
-                  background: #fff;
-                  position: relative;
-                  overflow: visible;
-                  cursor: pointer;
-                  -webkit-user-select: none;
-                  -moz-user-select: none;
-                  user-select: none;
-                  padding: 0;
-                  transition: transform .1s cubic-bezier(.4,0,.6,1),box-shadow .1s cubic-bezier(.4,0,.6,1);">
-                    <div style="pointer-events: none;">
-                      <div style="width: 100%;padding-top: 100%;      position: relative;">
-                        <img width="invalid-value" height="invalid-value" alt="Maybelline Superstay Matte Ink Liquid Matte Lipstick Make Up [ Tahan Lama Hingga 16 Jam ]" class="Vz6gJ3 edy5hG" style="object-fit: contain" src="http://majuselaras.com/cms/assets/uploads/product/1538639245.jpg">
-                      </div>
-                    </div>
-                    <div class="W3bJfG">
-                      <div class="qUEEG4"><div class="hPc1Pf"><div class="vc0PvV AxYdVM">Maybelline Superstay Matte Ink Liquid Matte Lipstick Make Up [ Tahan Lama Hingga 16 Jam ]</div></div><div class="bVKmWS"><div class="_1PWkR nt-medium nt-foot _3nkRL" style="color: rgb(246, 145, 19);"><svg class="_2DRZW _2xFcL" viewBox="-0.5 -0.5 4 16"><path d="M4 0h-3q-1 0 -1 1a1.2 1.5 0 0 1 0 3v0.333a1.2 1.5 0 0 1 0 3v0.333a1.2 1.5 0 0 1 0 3v0.333a1.2 1.5 0 0 1 0 3q0 1 1 1h3" stroke-width="1" transform="" stroke="currentColor" fill="#f69113"></path></svg><div class="_1FKkT _3Ao0A" style="color: white; background-color: rgb(246, 145, 19);">Diskon 7%</div><svg class="_2DRZW _2xFcL" viewBox="-0.5 -0.5 4 16"><path d="M4 0h-3q-1 0 -1 1a1.2 1.5 0 0 1 0 3v0.333a1.2 1.5 0 0 1 0 3v0.333a1.2 1.5 0 0 1 0 3v0.333a1.2 1.5 0 0 1 0 3q0 1 1 1h3" stroke-width="1" transform="rotate(180) translate(-3 -15)" stroke="currentColor" fill="#f69113"></path></svg></div></div></div>
-                      <div class="imdVqB _2fuFWg"><div class="WSVId4 fepoRf"><span class="Fea6JM">Rp</span><span class="j0vBz2">94.900</span></div><div class="upl8wJ _82UoSS">10RB+ Terjual</div></div>
-            
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div class="m-2  d-flex justify-content-center">
+                <img src="http://majuselaras.com/cms/assets/uploads/principal/1538424351.png" class="image-banner" alt="Image 1"/>
+            </div>
+        </SplideSlide>
+
+        <SplideSlide>
+            <div class="m-2">
+                <img src="http://majuselaras.com/cms/assets/uploads/principal/1538424495.png" class="image-banner" alt="Image 1"/>
             </div>
         </SplideSlide>
         <SplideSlide>
-            <div class="m-1">
-                <div class="card" style="border-radius: 9px;">
-                    <img src="{svelteLogo}" class="card-img-top"  alt="Image 1"/>
-                    <div class="card-body" style="padding:8px;">
-                        <h6 class="card-title">Air Sampler Impinger  MS-003-GS</h6>
-                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-                    </div>
-                </div>
+            <div class="m-2">
+                <img src="http://majuselaras.com/cms/assets/uploads/principal/1538424452.png" class="image-banner" alt="Image 1"/>
             </div>
         </SplideSlide>
         <SplideSlide>
-            <div class="m-1">
-                <div class="card" style="border-radius: 9px;">
-                    <img src="{svelteLogo}" class="card-img-top"  alt="Image 1"/>
-                    <div class="card-body" style="padding:8px;">
-                        <h6 class="card-title">Air Sampler Impinger  MS-003-GS</h6>
-                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-                    </div>
-                </div>
-            </div>
-        </SplideSlide>
-        <SplideSlide>
-            <div class="m-1">
-                <div class="card" style="border-radius: 9px;">
-                    <img src="{svelteLogo}" class="card-img-top"  alt="Image 1"/>
-                    <div class="card-body" style="padding:8px;">
-                        <h6 class="card-title">Air Sampler Impinger  MS-003-GS</h6>
-                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-                    </div>
-                </div>
-            </div>
-        </SplideSlide>
-        <SplideSlide>
-            <div class="m-1">
-                <div class="card" style="border-radius: 9px;">
-                    <img src="https://images.tokopedia.net/img/cache/300-square/VqbcmM/2021/10/21/cc30db51-e3a2-40ad-91e5-efdb5a8ce430.jpg.webp?ect=4g" class="card-img-top"  alt="Image 1"/>
-                    <div class="card-body" style="padding:8px;">
-                        <h6 class="card-title">Air Sampler Impinger  MS-003-GS</h6>
-                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-                    </div>
-                </div>
-            </div>
-        </SplideSlide>
-        <SplideSlide>
-            <div class="m-1">
-                <img src="{svelteLogo}" class="image-banner" alt="Image 1"/>
-            </div>
-        </SplideSlide>
-        <SplideSlide>
-            <div class="m-1">
-                <img src="{svelteLogo}" class="image-banner" alt="Image 1"/>
-            </div>
-        </SplideSlide>
-        <SplideSlide>
-            <div class="m-1">
-                <img src="{svelteLogo}" class="image-banner" alt="Image 1"/>
-            </div>
-        </SplideSlide>
-        <SplideSlide>
-            <div class="m-1">
-                <img src="{svelteLogo}" class="image-banner" alt="Image 1"/>
-            </div>
-        </SplideSlide>
-        <SplideSlide>
-            <div class="m-1">
-                <img src="{svelteLogo}" class="image-banner" alt="Image 1"/>
+            <div class="m-2">
+                <img src="http://majuselaras.com/cms/assets/uploads/principal/1641797434.png" class="image-banner" alt="Image 1"/>
             </div>
         </SplideSlide>
     </Splide>
+
+
+
+    
 
    
