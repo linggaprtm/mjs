@@ -1,6 +1,6 @@
 <script>
     import {onMount} from 'svelte';
-    // import Header from '../components/Header.svelte';
+    import Product from './Product.svelte';
     // import Footer from '../components/Footer.svelte';
     // import { storeCategories, storeBanner, storeProjectsHome } from '../data/store.js';
     import { Splide, SplideSlide } from '@splidejs/svelte-splide';
