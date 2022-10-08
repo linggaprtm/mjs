@@ -54,7 +54,7 @@
 
 	// import Project from './pages/Projects.svelte';
 
-	const baseUrl = '/';
+	const baseUrl = '';
 	
 	let page, subNav = '', uri, params, getParams;
 
