@@ -45,7 +45,9 @@
 </style> -->
 
 <script>
+
 	import router from 'page';
+	// @ts-ignore
 	import Home from './pages/Home.svelte';
 	import About from './pages/About.svelte';
 	import Product from './pages/Product.svelte';
